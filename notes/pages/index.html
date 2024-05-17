@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      a {
+        text-decoration: none;
+        color: black;
+      }
+      .note-container {
+        border: 1px solid;
+        max-width: 400px;
+        margin-bottom: 1em;
+        padding: 0.3em;
+      }
+
+      #note-tile {
+        width: 15em;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+
+      #note-text {
+        width: 20em;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+    </style>
+  </head>
+  <body>
+    <header><h1>Note App</h1></header>
+    <main>{{%CONTENT%}}</main>
+    <footer></footer>
+  </body>
+</html>
