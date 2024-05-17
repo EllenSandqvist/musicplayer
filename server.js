@@ -4,7 +4,7 @@ let url = require("url");
 
 let songs = JSON.parse(fs.readFileSync("./data/songs.json", "utf-8"));
 let homepage = fs.readFileSync("./pages/index.html", "utf-8");
-let superpolka = fs.readFileSync("./pages/SuperPolka.mp3");
+let superpolka = fs.readFileSync("./songs/SuperPolka.mp3");
 
 let detailView = fs.readFile(
   "./pages/detailView.html",
@@ -64,7 +64,7 @@ let server = http.createServer((request, response) => {
       response.end();
       // if (req.url === '/songs/SuperPolka.mp3')
     }
-  } else if (path === "/SuperPolka.mp3") {
+  } else if (path === "/hej.mp3") {
     response.writeHead(200, { "Content-Type": "audio/mpeg" });
     response.end(superpolka);
   } else {
